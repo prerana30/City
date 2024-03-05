@@ -1,9 +1,10 @@
 ﻿
 using CityInfo.API.Models;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.AspNetCore.JsonPatch;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace CityInfo.API.Controllers
 {
@@ -57,7 +58,7 @@ namespace CityInfo.API.Controllers
                 return NotFound();
             }
 
-            // demo purposes - to be improved
+     
             var maxPointOfInterestId = CitiesDataStore.Current.Cities.SelectMany(
                              c => c.PointsOfInterest).Max(p => p.Id);
 

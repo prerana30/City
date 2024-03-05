@@ -16,17 +16,15 @@ namespace Address.API.Models
                 new AddressDto()
                 {
                      Id = 1,
-                     Name = "Central Park",
-                     Description = "The most visited urban park in the United States.",
+                    
                      Street = "123 Main St",
                      City = "Anytown",
                      Country = "USA"
                 },
                 new AddressDto()
-                {
+                {  
                     Id = 2,
-                    Name = "Central Park",
-                    Description = "The most visited urban park in the United States.",
+                   
                     Street = "456 Elm St",
                     City = "Othertown",
                     Country = "USA"
